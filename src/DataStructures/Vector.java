@@ -9,15 +9,15 @@ public class Vector {
     public Vector(int capacity) {
     }
 
-    public int size() {
-        throw new NotImplementedException("Not implemented");
-    }
-
-    public int get(int index) {
-        throw new NotImplementedException("Not implemented");
-    }
-
-    public int addFirst(int item) {
-        throw new NotImplementedException("Not implemented");
-    }
+//    public int size() {
+//        throw new NotImplementedException("Not implemented");
+//    }
+//
+//    public int get(int index) {
+//        throw new NotImplementedException("Not implemented");
+//    }
+//
+//    public int addFirst(int item) {
+//        throw new NotImplementedException("Not implemented");
+//    }
 }
