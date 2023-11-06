@@ -1,6 +1,7 @@
 package DataStructures;
 
 import java.util.Arrays;
+import java.util.NoSuchElementException;
 
 public class Vector {
     private Object[] data;
@@ -66,22 +67,34 @@ public class Vector {
 
     public Object getFirst() {
         // add your code
+        if (count == 0) {
+            throw new NoSuchElementException();
+        }
         return data[0];
     }
 
     public Object getLast() {
         // add your code
+        if (count == 0) {
+            throw new NoSuchElementException();
+        }
         return data[count - 1];
     }
 
     public void removeLast() {
         // add your code
+        if (count == 0) {
+            throw new NoSuchElementException();
+        }
         data[count - 1] = null;
         count--;
     }
 
     public void removeFirst() {
         // add your code
+        if (count == 0) {
+            throw new NoSuchElementException();
+        }
         data[0] = null;
         for (int i = 1; i < count; i++) {
             data[i - 1] = data[i];
@@ -91,8 +104,7 @@ public class Vector {
     }
 
     public void printAll() {
-        for (Object element : data
-        ) {
+        for (Object element : data) {
             System.out.print(element + ", ");
         }
         System.out.println();
